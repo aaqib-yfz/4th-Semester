@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>Conditional Operator(&&) Example</title>
+    <script language="JavaScript">
+        var a,b,c;
+        a=window.prompt("Ente value for a");
+        b=window.prompt("Ente value for b");
+        c=window.prompt("Ente value for c");
+
+        document.writeln("<br> a ="+ a);
+        document.writeln("<br> b ="+ b);
+        document.writeln("<br> c ="+ c);
+
+        if((a>b) && (a>c))
+            document.writeln("<h3> Maxiumum Number is a =" + a);
+        else if((b>a) && (b>c))
+            document.writeln("<h3> Maxiumum Number is b =" + b);
+        else
+            document.writeln("<h3> Maxiumum Number is c =" + c);
+    </script>
+</head>
+<body>
+    <p>Click Refresh to run the script again.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>while Loop Example</title>
+    <script language="JavaScript">
+        var total,gradeCounter,gradeValue,average,grade;
+        total = 0;
+
+        gradeCounter=1;
+        while(gradeCounter<=10){
+            grade=window.prompt("Enter Integer Grade");
+            gradeValue=parseInt(grade);
+            total = total + gradeValue;
+            gradeCounter = gradeCounter+1;
+        }
+        average=total/10;
+        document.writeln("<h2> Class Average is "+ average + "</h2>");
+    </script>
+</head>
+<body>
+    <p>Click Refresh to run the script again.</p>
+</body>
+</html>
