@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function capital(){
+            var cap,index;
+            cap = new Array('islamabad','tehran','kabul','beijeng','New delhi');
+            index=frm.country.selectedindex;
+            frm.capshow.value=cap[index];
+            frm.country.value = frm.country.options[index].value;
+        }
+
+    </script>
+</head>
+<body>
+    <h4>The Capitals of Countries</h4>
+    <form action="none" name="frm">
+        <b>The Capital of </b>
+        <select name="country" onchange="capital();">
+            <option value="pak" selected> Pakistan</option>
+            <option value="iran">Iran</option>
+            <option value="afghan">Afghanistan</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+        </select>
+        is <input type="text" name="capshow" value="Islambad">
+        and option value is <input type="text" name="valshow" value="pak"> <br>
+    </form>
+</body>
+</html>

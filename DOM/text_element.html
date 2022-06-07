@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script langauge="JavaScript">
+
+        function full(){
+            document.frm.fullName.value = document.frm.firstName.value + " " + document.frm.lastName.value;
+        }
+    </script>
+    <style>
+        #frm{
+            margin-left: 30%;
+            border: 1px solid black;
+            width: 35%;
+            
+        }
+        #h2{
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body onload="document.frm.firstName.focus();">
+         
+    <h2 id="h2">Data Entry Form</h2>
+    <form action="none " name="frm"  id="frm">
+        <b> First Name = </b>
+        <input type="text" size="15 " value=" " name="firstName" onchange="full();"> <br> <br>
+        
+        <b> Last Name = </b>
+        <input type="text" size="15 " value=" " name="lastName" onchange="full();"> <br> <br>
+        <b>Full Name = </b>
+        <input type="text" size="15 " value=" " name="fullName">
+
+
+    </form>
+</body>
+</html>

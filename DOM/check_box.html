@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function cal(){
+            
+            let a = parseInt(document.frm.first.value);
+            let b =parseInt(document.frm.second.value);
+            if(document.frm.add.checked){
+                alert(a + "+" + b +"=" + (a+b));
+            }
+            if(document.frm.sub.checked){
+                alert(a + "-" + b +"=" + (a-b));
+            }
+            if(document.frm.prod.checked){
+                alert(a + "*" + b +"=" + (a*b));
+            }
+            if(document.frm.div.checked){
+                alert(`${a}/${b} = ${a/b}`)
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h2>Data Entry Form</h2>
+    <form action="none " name="frm">
+    <b>First Number = </b>
+    <input type="text" name="first" value=" " size="15">
+    <br> <br>
+    <b>Second Number = </b>
+    <input type="text" name="second" value=" " size="15">
+    <br> <br>
+    <b>Select the type of Calculation</b><br>
+    <b>Addition :</b> <input type="checkbox" name="add" checked  <br>
+    <b>Subtraction :</b> <input type="checkbox" name="sub"  > <br>
+    <b>Product:</b> <input type="checkbox" name="prod" > <br>
+    <b>Division :</b> <input type="checkbox" name="div" > <br>
+    <input type="button" value="Calculate" onclick="cal();">
+    </form>
+</body>
+</html>

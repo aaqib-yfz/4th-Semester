@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function cal(){
+            if(document.frm.action1[0].checked){
+                document.frm.result.value = document.frm.entry.value*2;
+            }
+            else {
+                document.frm.result.value = document.frm.entry.value*document.frm.entry.value;
+            }
+        }
+    </script>
+</head>
+<body>
+        <h2>calculations</h2>
+    <form action="none" name="frm">
+       <b>Number = </b> <input type="text" value="" name="entry">
+       <br> <br>
+       <b>Options</b> <br> <br>
+       <b> Twice </b><input type="radio" name="action1" value="twice" id="" onclick="cal();"> <br>
+       <b>square </b> <input type="radio" name="action1"  value="square"onclick="cal();"> <br> <br>
+       <b>Result = </b> <input type="text" name="result" value=" ">
+    </form>
+</body>
+</html>
