@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=2, initial-scale=1.0">
-    <title>If statement 3rd Example</title>
+    <title>Not Operator Example</title>
     <script language="JavaScript">
-        var marks;
-        marks = window.prompt("Enter your Marks");
-        if(marks>=40)
-            document.writeln("Congrats you're Passed");
+        var a;
+        a =window.prompt("Enter A Number ");
+        document.writeln("The Number You Entered = " + a + "<br>");
+        if(!(a%2==0))
+            document.writeln("You Entered an Odd Number");
         else
-        document.writeln("You're Failed");
+            document.writeln("You Enter an Even Number");
     </script>
 </head>
 <body>
